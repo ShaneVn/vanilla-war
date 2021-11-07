@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 100, 28);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+button{
+    background-color: rgb(36, 131, 118);
+    /* background-color: rgb(43, 12, 78); */
+    border: none;
+    color: white;
+
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button#set-deck{
+    padding: 10px 20px;
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+button#draw-card{
+    font-size: 30px;
+    padding: 10px;
+    align-self: stretch;
+}
+
+
+div.card-slot{
+    border:1px solid black;
+    border-radius: 5px;
+    height: 180px;
+    width: calc(180px * 5/7);
+}
+
+div.card-slot:nth-of-type(1) {
+    margin-bottom: 100px;
+}
+
+
+.card{
+ height: 100%;
+ width: 100%;
+}
+
+div.top{
+    display: flex;
+    align-self: flex-start;
+}
+
+div.top p{
+    margin: 8px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+
+
+button:disabled {
+    cursor: not-allowed;
+    color: grey;
+}
+
+#winner{
+    margin: 5px;
+}
